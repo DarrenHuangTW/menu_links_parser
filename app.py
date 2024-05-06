@@ -18,7 +18,7 @@ def parse_menu_links(html, base_url):
 
     if len(nav_elements) > 1:
         st.warning("Multiple navigation (<nav>) elements found. The script will parse links from all "
-                   "found <nav> elements, which may include non-menu links.")
+                   "found <nav> elements, which may include duplicate or non-menu links.")
 
     # create a list of dictionaries with the URL, anchor text, and level for each link
     menu_links = []
